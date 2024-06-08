@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+html{
+    scroll-behavior: smooth;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+  }
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #2d2e32;
+    width: 100vw;
+}
+.main-container{
+    /* overflow: hidden;
+    width: 100vw; */
+}
+.navbar{
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    background-color: #2d2e32;
+    height: 113px;
+}
+.brand{
+    display: block;
+    left: 0;
+   
+}
+ul{
+    list-style: none;
+    display: flex;
+    margin-left: 50px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    margin-left: 50px;
+    color: #979898;
+    font-weight: 600;
+    position: relative;
+    transition: 0.5s;
+}
+
+ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    background: #fff;
+    top: 35px;
+    transition: 0.5s;
+}
+.active{
+    color: #fff;
+   
+}
+
+ul li a:hover::after{
+    width: 100%;
+}
+ul li .active::after{
+    width: 100%;
+}
+.btn{
+  margin-left: auto;
+  gap: 30px;
+  display: flex;
+  align-items: center;
+}
+.fa-back{
+    width: 60px;
+    height: 60px;
+    background-color: #25262a;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+    z-index: 1;
+}
+.fa-back:hover{
+    background: orange;
+}
+.fa-back:hover .fa{
+    color: black;
+    border-color: #000;
+    /* border-color: #25262a; */
+}
+.fa{
+    color: orange;
+    border-color: orange;
+    z-index: 2;
+    margin-top: 20px;
+}
+.btn-1{
+    background-color: #fecd1a;
+    padding: 18px 50px;
+    border-radius: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 18px;
+    color: #25262a;
+    border: none;
+    /* margin-top: 80px; */
+    box-shadow: 1px 8px 5px rgba(92, 88, 55, 0.9);
+}
+.btn-1:hover{
+  background:   linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);
+  box-shadow: none;
+}
+/* navbar ended  */
+
+/* .............fix btn.................. */
+.fixbtn{
+    right: 0;
+    margin-top: 150px;
+    position: fixed;
+    z-index: 1;
+    gap: 20px;
+  }
+  .fixbtn .fixe-btn{
+  
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    color:#fff;
+    background-color: rgb(31, 27, 27);
+    border-radius: 10px;
+    width: 220px;
+    opacity: .5;
+    
+  }
+  .fixe-btn:hover{
+  opacity: 1;
+  }
+  .fa-windows, .fa-file-export, .fa-cart-shopping{
+    padding: 10px;
+  
+  }
+  
+  
+  
+  /* .............fix btn.................. */
+
+
+  
+ 
+
+  /* ........................Containner........................... */
+.containner{
+    display: flex;
+    width: 100%;
+    background-color: #1c1d1c;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
+    height: 100vh;
+    padding: 100px 30px;
+  
+  }
+  .col-n1, .col-n2{
+    flex-basis: 45%;
+  }
+  
+  #btn1 {
+    cursor: pointer;
+    height: 60px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-image: linear-gradient(to right, rgb(231, 175, 71), orange);
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  #btn1:hover {
+    opacity: 0.8;
+    background-image: linear-gradient(to right, orange, rgb(231, 175, 71));
+  }
+  
+  .col-n1 a{
+    color: aquamarine;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  h1{
+    font-size: 40px;
+    cursor: pointer;
+    color: #fff;
+    padding: 20px 0 20px 0;
+  
+    
+  }
+  .col-n1 p{
+  font-size: 18px;
+  color: #fff;
+  }
+  .social-div{
+    margin-top: 60px;
+    margin-right: 100px;
+  }
+  .like {
+    display: flex;
+    margin-top: 10px;
+  }
+  .like h2 {
+    color: #fff;
+    padding-left: 40px;
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+    .social-div .no p{
+      font-size:20px;
+      margin-left: 30px;
+      color: #ecf2fd;
+      font-weight: 300;
+    }
+    
+  #name, #email{
+    width: 45%;
+    height: 55px;
+    border: 2px solid rgb(34, 233, 127);
+    background-color: #000000;
+    border-radius: 15px;
+    color: #fff;
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: 10px;
+   
+  }
+  ::placeholder{
+    color: #fff;
+  }
+  #Message{
+  width: 94%;
+  border: 2px solid rgb(34, 233, 127);
+  background-color: #000000;
+  border-radius: 20px;
+  color: #fff;
+  padding: 20px;
+  margin: 30px 0 30px;
+  margin-left: 10px;
+  
+  }
+  
+  
+  .f-awesome{
+    color: rgb(34, 233, 127);
+    font-size: 25px;
+    width: 75px;
+    height: 75px;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid rgb(26, 28, 27);
+    /* padding: 25px; */
+    border-radius: 100%;
+  background: linear-gradient(145deg, #242a26, #1c1d1c);
+  box-shadow:  23px 23px 46px #373938,
+               -23px -23px 46px #2c2f2d;
+  }
+  .f-awesome:hover{
+    color: rgb(13, 14, 13);
+    background: linear-gradient(145deg, orange, rgb(236, 159, 16));
+    box-shadow:  23px 23px 46px #4c4e4d,
+    -23px -23px 46px #111312;
+  }
+  
+  
+  /* ........................Containner..End......................... */
+
+  /* footer section  */
+
+  footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #151414;
+    height: 150px;
+    width: 100%;
+  }
+  
+  .social{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    margin-top: 0px;
+  }
+  #btn-toggle{
+    display: none;
+    margin-left: 130px;
+   color: #fff;
+  }
+  #btn-toggle .fa-bars{
+    font-size: 30px;
+  }
+  .gotopbtn{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 30px;
+    color: black;
+    background-color: #fff;
+    border: 2px solid black;
+    margin-right: 0;
+    /* position: absolute; */
+    position: fixed;
+    text-align: center;
+    right: 40px;
+    bottom: 40px;
+    text-decoration: none;
+    z-index: 10;
+  }
+  .text-h5{
+    color: #fff;
+  }
+  /* .......................................... */
+
+
+
+
+  @media only screen and (max-width:376px){
+    .btn {
+      display: none;
+    }
+    #btn-toggle {
+      display: block;
+    }
+    .brand img {
+      width: 130px;
+    }
+    .navbar {
+      position: relative;
+    }
+    #nav {
+      position: absolute;
+      top: 80px;
+      width: 0px;
+      height: 400px;
+      left: 0;
+      display: block;
+      background-color: #151414;
+      text-align: center;
+      overflow: hidden;
+      transition: width 0.5s ease-in-out;
+    }
+    #nav li {
+      display: block;
+      margin-top: 25px;
+    }
+    #nav li a {
+      font-size: 35px;
+      color: #fff;
+    }
+    #nav li a::after {
+      width: 0;
+    }
+    h1 {
+      font-size: 40px;
+      line-height: normal;
+    }
+    h2 {
+      font-size: 30px !important;
+    }
+    h4 {
+      font-size: 14px !important;
+    }
+      /* .............fix btn.................. */
+.fixbtn{
+    margin-top: 150px;
+  }
+  .fixbtn .fixe-btn{
+  
+    font-size: 10px;
+    width: 150px;
+  }
+  /* .............fix btn.................. */
+   
+    .containner{
+       flex-direction: column-reverse !important;
+    }
+   .col-n1, .col-n2{
+    flex-basis: 100% !important;
+   }
+    
+    .text-h3{
+        font-size: 20px;
+       
+    }
+    
+    
+   footer{
+    flex-direction: column;
+    height: 250px;
+   }
+   .fa-back{
+    width: 40px;
+    height: 40px;
+   }
+   .social{
+    /* gap: 20px; */
+    justify-content: space-around;
+   }
+   .fa{
+    margin-top: 12px;
+    font-size: 18px;
+   }
+   footer h5{
+    font-size: 13px !important;
+    width: 250px !important;
+    margin-left: 10px;
+   }
+   body{
+    width: 100vw;
+   }
+  }

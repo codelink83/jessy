@@ -1,0 +1,401 @@
+html{
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: rgb(51, 51, 51);
+}
+.main-container {
+  width: 100%;
+  padding: 20px;
+  padding-top: 200px;
+  overflow: hidden;
+}
+
+/* ......navbar....... */
+
+#navbar {
+  display: flex;
+  padding: 0 30px;
+  align-items: center;
+  background-color: #2d2e32;
+  height: 113px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  margin-left: 100px;
+  align-items: center;
+  /* margin-top: -20px; */
+}
+
+ul li {
+  display: inline-block;
+}
+ul li a{
+  text-decoration: none;
+  font-size: 22px;
+  margin-left: 50px;
+  color: #979898;
+  font-weight: 600;
+  position: relative;
+  transition: 0.5s;
+}
+
+ul li a::after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  background: #fff;
+  top: 35px;
+  transition: 0.5s;
+}
+.active{
+  color: #fff;
+ 
+}
+
+ul li a:hover::after{
+  width: 100%;
+}
+ul li .active::after{
+  width: 100%;
+}
+
+ul li a:hover {
+  color: #fff;
+}
+
+#bar {
+  display: none;
+  font-size: 40px;
+  margin-top: 8px;
+  color: #fff;
+}
+#close {
+  display: none;
+  font-size: 30px;
+  margin-left: 45%;
+}
+#end-btn {
+  margin-left: auto;
+  gap: 30px;
+  display: flex;
+  align-items: center;
+}
+
+#btn {
+  cursor: pointer;
+  height: 60px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  background-image: linear-gradient(to right, rgb(231, 175, 71), orange);
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+#btn:hover {
+  opacity: 0.8;
+  background-image: linear-gradient(to right, orange, rgb(231, 175, 71));
+}
+.fa-globe {
+  padding: 18px;
+  color: orange;
+  background-color: #383737;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 25px;
+  margin-right: 15px;
+}
+.fa-globe:hover {
+  color: #383737;
+  background-color: orange;
+}
+/* .............Navbar end.................. */
+/* .............fix btn.................. */
+.fixbtn{
+  right: 0;
+  margin-top: 150px;
+  position: fixed;
+  z-index: 1;
+  gap: 20px;
+}
+.fixbtn .fixe-btn{
+
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px;
+  color:#fff;
+  background-color: rgb(31, 27, 27);
+  border-radius: 10px;
+  width: 220px;
+  top: px;
+  opacity: .5;
+}
+.fixe-btn:hover{
+opacity: 1;
+}
+.fa-windows, .fa-file-export, .fa-cart-shopping{
+  padding: 10px;
+
+}
+
+
+
+/* .............fix btn.................. */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -100px;
+}
+.col-1 {
+  padding: 4%;
+  width: 40%;
+  color: aliceblue;
+}
+
+.col-1 a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+.col-1 h1 {
+  font-size: 50px;
+  margin-top: 20px;
+  color: #fff;
+}
+.col-1 p {
+  font-size: 20px;
+  padding: 30px 0 30px 0px;
+}
+.red-more {
+  color: orange;
+}
+.project {
+  color: aquamarine;
+}
+.col-2 {
+  padding: 5%;
+  width: 60%;
+}
+.col-2 .card {
+  transform: rotate(-15deg);
+
+  background-color: #424242;
+  width: 100%;
+  border-radius: 46px;
+  padding: 10px;
+}
+.col-2 .card img {
+  transform: rotate(15deg);
+  border-radius: 46px;
+  transform: rotate(10deg);
+  margin-left: -35px;
+  width: 95%;
+  transition: 2s;
+}
+#circul-orange {
+  transition: 2s;
+  margin-left: 380px;
+  z-index: -2;
+  width: 300px;
+}
+#circul-green {
+  transition: 2s;
+  left: 0;
+  z-index: -2;
+  width: 300px;
+}
+/* .............footer........... */
+.footer {
+  margin-top: 100px;
+  width: 100%;
+  background-color: rgb(58, 56, 56);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+}
+.footer .footer-col {
+  width: 450px;
+  padding: 10px;
+  align-items: center;
+  padding-top: 30px;
+  text-align: center;
+}
+.footer .footer-col p {
+  font-size: 15px;
+  font-weight: 450;
+  color: #e2dddd;
+}
+.footer .icon {
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.footer .fa-brands {
+  padding: 20px;
+  margin-left: 10px;
+  background-color: rgb(37, 36, 36);
+  border-radius: 10px;
+  color: orange;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.footer .fa-brands:hover{
+  background-color: orange;
+  color: #2d2e32;
+}
+/* .............footer..end......... */
+.gotopbtn{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  font-size: 30px;
+  color: black;
+  background-color: #fff;
+  border: 2px solid black;
+  margin-right: 0;
+  /* position: absolute; */
+  position: fixed;
+  text-align: center;
+  right: 40px;
+  bottom: 40px;
+  text-decoration: none;
+}
+/* .......................................... */
+@media (max-width: 950px) {
+  .fixbtn{
+    margin-top: 150px;
+  }
+  .fixbtn .fixe-btn{
+  
+    font-size: 10px;
+    width: 150px;
+  }
+  #circul-orange {
+    width: 150px;
+
+  }
+  #circul-green{
+    width: 150px;
+  }
+}
+@media (max-width: 900px) {
+  #navbar{
+    position: relative;
+  }
+
+  #menu{
+    position: absolute;
+    top: 0px;
+    width: 0;
+    height: 100vh;
+    left: -100px;
+    display: block;
+    padding-top: 250px;
+    padding-right: 20px;
+    background-color: #151414;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+ul li a::after{
+  display: none;
+}
+  #circul-orange {
+    display: none;
+  }
+  #circul-green{
+    display: none;
+  }
+  #bar {
+    display: block;
+    right: 0;
+  }
+  
+  ul li {
+    /* margin-left: -130px; */
+    text-align: center;
+    padding: 10px 0px;
+    color: #fff;
+    display: block;
+  }
+  #menu li a {
+    font-size: 35px;
+    font-weight: 400;
+    color: #fff;
+  }
+  #menu li a:hover{
+    font-weight: 900;
+  }
+  #close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    /* display: none; */
+  }
+}
+@media (max-width: 750px) {
+  #logo {
+    display: block;
+  }
+
+  #earth,
+  #btn {
+    display: none;
+    background-color: palegoldenrod;
+  }
+
+  .row {
+    /* display: block; */
+    flex-wrap: wrap;
+    margin-top: 0px;
+  }
+  .row-Add{
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+
+  }
+  .col-1 {
+    padding: 4%;
+    width: 100%;
+  }
+  .col-2 {
+    padding: 20px;
+    width: 100%;
+  }
+  /* ................ */
+
+  .col-2 .card {
+    margin-top: 50px;
+    transform: rotate(10deg);
+
+    width: 96%;
+    border-radius: 46px;
+    padding: 0px;
+  }
+  .col-2 .card img {
+    transform: rotate(-10deg);
+    margin-left: -5px;
+    width: 105%;
+  }
+  #circul-orange {
+    top: 380px;
+    z-index: -1;
+  }
+}
